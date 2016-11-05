@@ -17,6 +17,8 @@
 #include "GameOver.h"
 #include "Controlls.h"
 
+// need to add db
+
 // the main routine
 int main() {
 	// (140, 80) is a the maximum
