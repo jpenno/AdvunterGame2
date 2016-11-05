@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{23ede8a9-2685-4b06-a9e2-8a9624e288f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{9f5bc1bf-4c5d-4fea-aa51-5dff5722a935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\iteams">
+      <UniqueIdentifier>{b1d9b51a-6812-40a3-98ad-d2e380b5a56f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\iteams\weapons">
+      <UniqueIdentifier>{e66f7231-10f6-46c3-b0b2-5ef3467ac16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Rooms">
+      <UniqueIdentifier>{3b313f8f-999c-44fc-ac56-a82b747a995f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\iteams">
+      <UniqueIdentifier>{2a4812e5-3eae-412b-8934-5cc165e29d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\iteams\weapons">
+      <UniqueIdentifier>{b06f72ae-fe8a-4e44-843b-4950c6ceaf87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Rooms">
+      <UniqueIdentifier>{746d0d52-be6c-4475-9105-e6848496a72f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Empty.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Loot.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="End.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Start.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files\Game\iteams\weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Sword.cpp">
+      <Filter>Source Files\Game\iteams\weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Iteam.cpp">
+      <Filter>Source Files\Game\iteams</Filter>
+    </ClCompile>
+    <ClCompile Include="Locked.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomManager.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Postion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyRoom.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterRoom.cpp">
+      <Filter>Source Files\Game\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthPotion.cpp">
+      <Filter>Source Files\Game\iteams</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackPotion.cpp">
+      <Filter>Source Files\Game\iteams</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Empty.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="Loot.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="End.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="Start.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="Iteam.h">
+      <Filter>Header Files\Game\iteams</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Header Files\Game\iteams\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files\Game\iteams\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Locked.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomManager.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyRoom.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterRoom.h">
+      <Filter>Header Files\Game\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthPotion.h">
+      <Filter>Header Files\Game\iteams</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackPotion.h">
+      <Filter>Header Files\Game\iteams</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Postion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Controlls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+  </ItemGroup>
+</Project>

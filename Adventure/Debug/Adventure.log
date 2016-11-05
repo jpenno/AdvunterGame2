@@ -1,0 +1,10 @@
+﻿  Game.cpp
+  Running Code Analysis for C/C++...
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  Adventure.vcxproj -> E:\AIE_Work\Deplomer\AdvunterGame\_AdventureGame0.001\Debug\Adventure.exe
+  Adventure.vcxproj -> E:\AIE_Work\Deplomer\AdvunterGame\_AdventureGame0.001\Debug\Adventure.pdb (Full PDB)
+e:\aie_work\deplomer\advuntergame\_adventuregame0.001\adventure\string.cpp(86): warning C6386: Buffer overrun while writing to 'this->m_str':  the writable size is 'm_capacity*1' bytes, but '2' bytes might be written.
+e:\aie_work\deplomer\advuntergame\_adventuregame0.001\adventure\string.cpp(212): warning C6386: Buffer overrun while writing to 'tmp':  the writable size is 'm_capacity*1' bytes, but '2' bytes might be written.
+e:\aie_work\deplomer\advuntergame\_adventuregame0.001\adventure\string.cpp(237): warning C6386: Buffer overrun while writing to 'tmp':  the writable size is 'm_capacity*1' bytes, but '2' bytes might be written.

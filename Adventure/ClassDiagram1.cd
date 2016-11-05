@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Button" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAAAABBgAAAIAAAAAAQAAAAAAAAAAAAAkAAAA=</HashCode>
+      <FileName>Button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameOver" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEgAAAEAAAAhAAAAAQAAAAwAAAAAAAAAAAAAgAAAI=</HashCode>
+      <FileName>GameOver.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAEABAAgAAACAAAAAAAAAIAAAAAAAAAAEAAAI=</HashCode>
+      <FileName>Menu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Postion" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAABAYAAAAAAAQAQAAAAAAAYAAAAAAAAAA=</HashCode>
+      <FileName>Postion.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="String" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAAIBQAAAQAAAAAYEAAIABDgAAAAAAACAEAAgIAoAA=</HashCode>
+      <FileName>string.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Window" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAIAAIQABCQAQAAgABAAAIAAgACAAEEAAQAAAAAA=</HashCode>
+      <FileName>window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAQAAEAAAJgAAAAAEAAABUAqAAEIwAAAAAAAAACI=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAAgABAAICAAAAUAAEAAAAAAAAgAAgAhAAAA=</HashCode>
+      <FileName>Monster.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIBAACBJEAgAFiAIABAiARgEMABAABkIAQAAgQgARDA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAgAAAAAAABgAAQAAEAAAIQAIAAAAAQAAAAAAAEBA=</HashCode>
+      <FileName>UI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttackPotion" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAABAAEAAAAAAAAAAAEAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>AttackPotion.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthPotion" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEAAAAQAAAAAAAAAAAAAAAEAAAAAAACAAAAAAA=</HashCode>
+      <FileName>HealthPotion.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iteam" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAIAAAAAAAAgAAgAAAAAIAAAAEABEAEAAIAAAABAA=</HashCode>
+      <FileName>Iteam.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sword" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgABgQAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sword.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Weapon" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAEAAAAAAAgABgAAAAAAAAAAAAAAAAgAAAAAAAgAAAA=</HashCode>
+      <FileName>Weapon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Empty" Collapsed="true">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgIAAAIAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Empty.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="End" Collapsed="true">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAgAAAAAAAAAEEAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>End.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyRoom" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEAAAAAAAAgAAAAAAAAAEEAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KeyRoom.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Locked" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACAAAAhCAAAAggAAAAAAAgUEAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Locked.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Loot" Collapsed="true">
+    <Position X="7.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACJAAAAAgAIAAAAAAAEEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Loot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonsterRoom" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAABAAEAAgAAAAAAAAAEEAAACAAAAAAAAAAABAA=</HashCode>
+      <FileName>MonsterRoom.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseRoom" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Room.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Room" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAIAADBAAAEgABAFggAABEEAAAIEWAAAAgAGAABAA=</HashCode>
+      <FileName>Room.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoomManager" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAIACBIAIABhABAYAAAAhpWAEEAACAIEAAAEgAAAA=</HashCode>
+      <FileName>RoomManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Start" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAgAAAAAAAAAAEAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Start.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Controlls" Collapsed="true">
+    <Position X="17" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACCAAAAIAAQAAAAAAAIAACABAABAgAAgAA=</HashCode>
+      <FileName>Controlls.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Rect" Collapsed="true">
+    <Position X="18.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>window.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="uint" Collapsed="true">
+    <Position X="17" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>window.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="eGameStates" Collapsed="true">
+    <Position X="20.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAACAAAACAAAQAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameStates.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_0035_1" Collapsed="true">
+    <Position X="17" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAIAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>window.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="eColor" Collapsed="true">
+    <Position X="18.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEBABAAAgAQIAAAAEAAABAAkAAEAAAEAAAABAgAQA=</HashCode>
+      <FileName>window.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ePickUpType" Collapsed="true">
+    <Position X="22.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Iteam.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="eRoomType" Collapsed="true">
+    <Position X="17" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEABAAAAAAAAAAAAACgAAAgAAAAAAAAAgACIA=</HashCode>
+      <FileName>Room.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
