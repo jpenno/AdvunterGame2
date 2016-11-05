@@ -5,7 +5,7 @@ Game::Game() {
 	m_ui.Set(120, 60, 5, 5);
 	init();
 	m_controllsRef = nullptr;
-	m_roomManager.Set(5, 5, m_player, m_controllsRef);
+	//m_roomManager.Set(5, 5, m_player, m_controllsRef);
 }
 
 Game::Game(int a_width, int a_height, int a_screenWidth, int a_screenHeight, Controlls *a_cReff) {
@@ -13,8 +13,9 @@ Game::Game(int a_width, int a_height, int a_screenWidth, int a_screenHeight, Con
 	m_screenHeight = a_screenHeight;
 	m_screenWidth = a_screenWidth;
 	m_ui.Set(m_screenWidth, m_screenHeight, a_width, a_height );
+	m_roomManager.SetWidth(a_width);
+	m_roomManager.SeHeight(a_height);
 	init();
-	m_roomManager.Set(a_height, a_width, m_player, m_controllsRef);
 }
 
 Game::~Game() {
@@ -25,6 +26,8 @@ void Game::init() {
 	if (m_player)
 		delete m_player;
 	m_player = new Player();
+	m_roomManager.Set(m_roomManager.GetHeight(), m_roomManager.GetWidth(), 
+						m_player, m_controllsRef);
 	m_player->SetPos(1, 1);
 }
 

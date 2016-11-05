@@ -39,6 +39,8 @@ public:
 
 	int GetHeight() { return m_height; }
 	int GetWidth() { return m_width; }
+	void SetWidth(int a_width) { m_width = a_width; }
+	void SeHeight(int a_Height) { m_height = a_Height; }
 	eRoomType GetRoomType(int a_x, int a_y) { return m_rooms[a_y* m_width + a_x]->GetType(); }
 	eRoomType GetRoomType(Postion a_pos) { return m_rooms[a_pos.GetY()* m_width + a_pos.GetX()]->GetType(); }
 	Room* GetRoom(int a_x, int a_y) { return m_rooms[a_y* m_width + a_x]; }

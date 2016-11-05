@@ -5,8 +5,8 @@
 using namespace std;
 
 void RoomManager::SetRooms() {
-	//incress the dungion level
-	m_levelString.setString("Dungon Level: ");
+	//incress the dungeon level
+	m_levelString.setString("Dungeon Level: ");
 	m_level++;
 	
 	
@@ -45,9 +45,9 @@ void RoomManager::SetRooms() {
 	//set the player to being in this room
 	m_rooms[m_playerReff->GetPos().GetY() * m_width + m_playerReff->GetPos().GetX()]->SetPlayerHere();
 	
-	//the the postion the romm will be set to
+	//the the position the room will be set to
 	Postion tmpPos;
-	// x and y postion for the end room
+	// x and y position for the end room
 	int x, y;
 	 //sets the end room
 	do {
@@ -122,7 +122,7 @@ void RoomManager::SetRooms() {
 void RoomManager::MakeLockedRooms( Postion &a_tmpPos, int &a_j, int &a_i) {
 	//checks how many locked rooms have been set
 	if (m_lockedRooms < m_maxLockedRooms) {
-		//check if goning out of the array bounds
+		//check if going out of the array bounds
 		if (!(a_j == 0)) {
 			if(!(a_i == 0)) {
 				//checks if the room above and to the left are a locked type room
@@ -131,7 +131,7 @@ void RoomManager::MakeLockedRooms( Postion &a_tmpPos, int &a_j, int &a_i) {
 					//checks if the room above and to the left are the start room
 					if ((m_rooms[a_i *m_width + (a_j - 1)]->GetType() != START) && 
 							(m_rooms[(a_i - 1) *m_width + a_j]->GetType() != START)) {
-						//sets the romm to a locked room
+						//sets the room to a locked room
 						m_rooms[a_i *m_width + a_j] = new Locked(a_tmpPos, m_roomWidth, m_roomHeight, LOCKED, m_level, m_controllsRef);
 						m_lockedRooms++;
 						a_j++;
@@ -157,7 +157,7 @@ RoomManager::RoomManager() {
 }
 
 RoomManager::~RoomManager() {
-	//delete m_rooms if not set to null poniter
+	//delete m_rooms if not set to null pointer
 	if (m_rooms != nullptr)
 		delete[] m_rooms;
 }
@@ -165,7 +165,7 @@ RoomManager::~RoomManager() {
 //sets the rooms up
 void RoomManager::Set(int a_height, int a_width, Player *a_playerReff, Controlls *a_controllsRef) {
 	m_controllsRef = a_controllsRef;
-	//set player postion reff
+	//set player position ref
 	m_playerReff = a_playerReff;
 	//set up the array of rooms
 	m_height = a_height;
@@ -224,6 +224,6 @@ void RoomManager::Draw() {
 	//draw the room the player is in info
 	m_rooms[m_playerReff->GetPos().GetY() * m_width + m_playerReff->GetPos().GetX()]->DrawRoonInfo();
 
-	//draw what the playe can do in the the room there in
+	//draw what the player can do in the the room there in
 	m_rooms[m_playerReff->GetPos().GetY() * m_width + m_playerReff->GetPos().GetX()]->DrawOptions();
 }

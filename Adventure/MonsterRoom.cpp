@@ -42,8 +42,7 @@ void MonsterRoom::InPut(Player &a_playerReff, String a_inPut) {
 void MonsterRoom::Draw() {
 	Rect pLocation = { m_drawPos.GetX(), m_drawPos.GetY(), m_width, m_height };
 	Window::DrawBorder(pLocation, DARKCYAN);
-	eColor color = m_playerHere ? CYAN : YELLOW;
-	Window::SetTextColor(color);
+	Window::SetTextColor(m_playerHere ? CYAN : YELLOW);
 	Window::DrawChar(m_drawPos.GetX() + 3, m_drawPos.GetY() + 2, m_playerHere ? '!' : m_monster.GetDead() ? ' ': 'M');
 
 	Window::DrawLine(45, 24, WHITE, m_info.cStr(), 30);

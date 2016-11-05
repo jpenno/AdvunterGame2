@@ -11,8 +11,7 @@ End::~End() {
 void End::Draw() {
 	Rect pLocation = { m_drawPos.GetX(), m_drawPos.GetY(), m_width, m_height };
 	Window::DrawBorder(pLocation, RED);
-	eColor color = m_playerHere ? CYAN : YELLOW;
-	Window::SetTextColor(color);
+	Window::SetTextColor(m_playerHere ? CYAN : YELLOW);
 	Window::DrawChar(m_drawPos.GetX() + 3, m_drawPos.GetY() + 2, m_playerHere ? '!' : 'F');
 
 	Window::DrawLine(4, 37, WHITE, m_info.cStr(), 50);
