@@ -1,7 +1,3 @@
-﻿  RoomManager.cpp
-  Game.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  main.cpp
+﻿  RenderTesting.cpp
   Adventure.vcxproj -> D:\GitHub\AdvunterGame2\x64\Debug\Adventure.exe
   Adventure.vcxproj -> D:\GitHub\AdvunterGame2\x64\Debug\Adventure.pdb (Full PDB)

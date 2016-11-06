@@ -9,9 +9,6 @@ void RoomManager::SetRooms() {
 	m_levelString.setString("Dungeon Level: ");
 	m_level++;
 	
-	
-	
-
 	//check if there is empty rooms left for more monster rooms
 	if (m_maxMonsterRooms >= m_maxPossMonsterRooms) {
 		m_maxMonsterRooms = m_maxPossMonsterRooms;
@@ -40,7 +37,7 @@ void RoomManager::SetRooms() {
 	m_monsterRooms = 0;
 	
 	//set the player starting room
-	m_rooms[m_playerReff->GetPos().GetY() * m_width + m_playerReff->GetPos().GetX()]
+	m_rooms[m_playerReff->GetPos().GetY()* m_width + m_playerReff->GetPos().GetX()]
 					= new Start(m_playerReff->GetPos(), m_roomWidth, m_roomHeight, START, m_controllsRef);
 	//set the player to being in this room
 	m_rooms[m_playerReff->GetPos().GetY() * m_width + m_playerReff->GetPos().GetX()]->SetPlayerHere();

@@ -4,5 +4,6 @@ enum eGameStates {
 	GAME,
 	GAME_OVER,
 	RESET,
+	RENDER_TESTING,
 	EXIT
 };

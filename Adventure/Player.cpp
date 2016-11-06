@@ -1,7 +1,7 @@
 #include "Player.h"
 
 Player::Player() {
-	m_postion = Postion(2, 2);
+	m_postion = Postion(1, 1);
 	m_maxHealrh = 20;
 	m_health = m_maxHealrh;
 	m_floorDone = false;

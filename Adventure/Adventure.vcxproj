@@ -165,6 +165,8 @@
     <ClCompile Include="MonsterRoom.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Postion.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="RenderTesting.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="RoomManager.cpp" />
     <ClCompile Include="Start.cpp" />
@@ -195,6 +197,8 @@
     <ClInclude Include="MonsterRoom.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Postion.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="RenderTesting.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="RoomManager.h" />
     <ClInclude Include="Start.h" />

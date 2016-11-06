@@ -16,6 +16,7 @@
 #include "GameStates.h"
 #include "GameOver.h"
 #include "Controlls.h"
+#include "RenderTesting.h"
 
 // adding DB branch Testing
 
@@ -23,10 +24,10 @@
 int main() {
 	// (140, 80) is a the maximum
 	int width = 80;
-	int height = 52;
+	int height = 53;
 	bool result = Window::Initialise(width, height, L"Adventure");
 
-	eGameStates gameState = MENU;
+	eGameStates gameState = RENDER_TESTING;
 	bool run = true;
 
 	if (result == EXIT_FAILURE)
@@ -50,6 +51,7 @@ int main() {
 	Menu menu;
 	Game game(5, 5, width, height, &gControlls);
 	GameOver gameOVer;
+	RenderTesting renderTesting;
 
 	//srand(time(NULL));
 	while (run) {
@@ -70,6 +72,9 @@ int main() {
 				break;
 			case EXIT:
 				run = false;
+				break;
+			case RENDER_TESTING:
+				renderTesting.Draw();
 				break;
 		}
 	}

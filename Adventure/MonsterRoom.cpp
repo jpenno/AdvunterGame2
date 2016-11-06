@@ -15,7 +15,7 @@ void MonsterRoom::InPut(Player &a_playerReff, String a_inPut) {
 			//store the damage the player dose to the enemy
 			int pDamage = a_playerReff.GetDamage();
 			m_monster.TakeDamage(pDamage, a_playerReff);
-			m_info.setString("Delt: ");
+			m_info.setString("Dalt: ");
 			char damageChar[10];
 			//convert from int to char array to append 
 			_itoa_s(pDamage, damageChar, 10);
@@ -29,7 +29,7 @@ void MonsterRoom::InPut(Player &a_playerReff, String a_inPut) {
 		else {
 			if (!m_monster.GetDead()) {
 				a_playerReff.TakeDamage(m_monster.GetDamage() * 2);
-				m_info.setString("you take duble damage from runing: ");
+				m_info.setString("you take double damage from ruining: ");
 				char damageChar[10];
 				//convert from int to char array to append 
 				_itoa_s(m_monster.GetDamage() * 2, damageChar, 10);
