@@ -207,7 +207,7 @@ void Game::UnLockRoom(){
 
 void Game::InPut() {
 	//get the string from the console
-	m_input.ReadFromConsole();
+	//m_input.ReadFromConsole();
 
 	//get rid of the spaces in the user input
 	String space(" ");
@@ -248,12 +248,12 @@ void Game::UpDate() {
 
 void Game::Draw() {
 	//system("CLS");
-	clear_screen();
-	m_roomManager.Draw();
-	m_player->Draw();
+	//clear_screen();
+	//m_roomManager.Draw();
+	//m_player->Draw();
 
 	//tells the player if the room they tried to move to is locked
-	Window::DrawLine(45, 24, WHITE, m_outPut.cStr(), 50);
+	//Window::DrawLine(45, 24, WHITE, m_outPut.cStr(), 50);
 
 	m_ui.Draw();
 }

@@ -18,6 +18,8 @@
 #include "Controlls.h"
 #include "RenderTesting.h"
 
+#include "Render.h"
+
 // adding DB branch Testing
 
 // the main routine
@@ -26,8 +28,9 @@ int main() {
 	int width = 80;
 	int height = 53;
 	bool result = Window::Initialise(width, height, L"Adventure");
+	Render::SetBufferSize(80, 52);
 
-	eGameStates gameState = RENDER_TESTING;
+	eGameStates gameState = MENU;
 	bool run = true;
 
 	if (result == EXIT_FAILURE)

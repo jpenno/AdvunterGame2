@@ -1,6 +1,12 @@
 #include "Render.h"
 #include "window.h"
 
+// These are the static class variables 
+int Render::m_width;
+int Render::m_height;
+std::vector<std::vector<eColor>> Render::m_bufferColor;
+std::vector<std::vector<unsigned char>> Render::m_buffer;
+
 Render::Render()
 {
 }
@@ -13,11 +19,7 @@ void Render::SetBufferSize(int a_width, int a_height)
 {
 	m_width = a_width;
 	m_height = a_height;
-	Clear();
-}
 
-void Render::Clear()
-{
 	for (int i = 0; i < m_height; i++)
 	{
 		vector<unsigned char> tmp;
@@ -29,6 +31,18 @@ void Render::Clear()
 		}
 		m_buffer.push_back(tmp);
 		m_bufferColor.push_back(tmpColor);
+	}
+}
+
+void Render::Clear()
+{
+	for (int i = 0; i < m_height; i++)
+	{
+		for (int j = 0; j < m_width; j++)
+		{
+			m_buffer[i][j] = ' ';
+			m_bufferColor[i][j] = WHITE;
+		}
 	}
 }
 
@@ -77,7 +91,8 @@ void Render::Draw()
 		for (int y = 0; y < m_height; y++)
 		{		
 			Window::SetXY(x, y);
-			Window::SetTextColor(m_bufferColor[y][x]);
+			//Window::SetTextColor(m_bufferColor[y][x]);
+			Window::SetTextColor((eColor)(rand() % 15));
 			cout << m_buffer[y][x];
 		}
 	}
