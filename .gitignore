@@ -5,3 +5,8 @@
 /Adventure.VC.VC.opendb
 Adventure.VC.db
 x64
+\Adventure\x64
+\Adventure\Release
+\Adventure\Debug
+Adventure.sdf
+Adventure.vcxproj.user
