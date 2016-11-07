@@ -22,6 +22,8 @@
 
 // adding DB branch Testing
 
+// need to add duble buffering\
+
 // the main routine
 int main() {
 	// (140, 80) is a the maximum
