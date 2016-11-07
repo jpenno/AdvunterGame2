@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "window.h"	 
 #include "Render.h"
+//up date to commit
 
 void clear_screen(void);
 Game::Game() {
