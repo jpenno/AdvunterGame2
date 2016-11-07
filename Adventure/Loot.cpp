@@ -1,4 +1,5 @@
 #include "Loot.h"
+#include "Render.h"
 
 Loot::Loot(Postion a_postion, int a_w, int a_h, eRoomType a_type, int a_level, Controlls *a_controllsRef):
 					Room(a_postion, a_w, a_h, a_type, a_controllsRef){
@@ -35,9 +36,9 @@ void Loot::DrawOptions(){
 
 void Loot::Draw() {
 	Rect pLocation = { m_drawPos.GetX(), m_drawPos.GetY(), m_width, m_height };
-	Window::DrawBorder(pLocation, YELLOW);
-	Window::SetTextColor(m_playerHere ? CYAN : YELLOW);
-	Window::DrawChar(m_drawPos.GetX() + 3, m_drawPos.GetY() + 2, m_playerHere ? '!' : m_looted? ' ' : '=');
+	Render::DrawBorder(pLocation, YELLOW);
+	Render::DrawChar(m_drawPos.GetX() + 3, m_drawPos.GetY() + 2, m_playerHere ? '!' : m_looted? ' ' : '=',
+		m_playerHere ? CYAN : YELLOW);
 }
 
 void Loot::DrawRoonInfo() {

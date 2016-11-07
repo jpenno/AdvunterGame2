@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdlib.h>   
 #include <time.h>     
+
 using namespace std;
 
 void RoomManager::SetRooms() {
@@ -216,7 +217,7 @@ void RoomManager::Draw() {
 			m_rooms[i]->Draw();
 		}
 	}
-	Window::DrawLine(60, 2, WHITE, m_levelString.cStr(), 50);
+	//Window::DrawLine(60, 2, WHITE, m_levelString.cStr(), 50);
 
 	//draw the room the player is in info
 	m_rooms[m_playerReff->GetPos().GetY() * m_width + m_playerReff->GetPos().GetX()]->DrawRoonInfo();

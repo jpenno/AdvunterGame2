@@ -1,5 +1,7 @@
 #include "Game.h"
-#include "window.h"	   
+#include "window.h"	 
+#include "Render.h"
+
 void clear_screen(void);
 Game::Game() {
 	m_ui.Set(120, 60, 5, 5);
@@ -207,7 +209,8 @@ void Game::UnLockRoom(){
 
 void Game::InPut() {
 	//get the string from the console
-	//m_input.ReadFromConsole();
+	m_input.ReadFromConsole();
+	Window::SetCursorVisibility(false);
 
 	//get rid of the spaces in the user input
 	String space(" ");
@@ -247,15 +250,19 @@ void Game::UpDate() {
 }
 
 void Game::Draw() {
-	//system("CLS");
-	//clear_screen();
-	//m_roomManager.Draw();
-	//m_player->Draw();
+	Render::Clear();
+	m_roomManager.Draw();
+	m_player->Draw();
 
 	//tells the player if the room they tried to move to is locked
-	//Window::DrawLine(45, 24, WHITE, m_outPut.cStr(), 50);
+	Render::DrawLine(45, 24, WHITE, m_outPut.cStr(), 50);
 
 	m_ui.Draw();
+	Render::Draw();
+
+	// Set the cusser pos
+	Window::SetXY(12, 29);
+	Window::SetCursorVisibility(true);
 }
 
 

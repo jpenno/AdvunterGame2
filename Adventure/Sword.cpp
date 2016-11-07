@@ -1,5 +1,7 @@
 #include "Sword.h"
+#include "Render.h"
 #include <time.h>
+
 Sword::Sword() {
 	m_name.setString("Sword of damage");
 	m_damage = rand() % 20;
@@ -33,8 +35,8 @@ void Sword::Draw(int a_x, int a_y) {
 	itoa(m_level, levelChar, 10);
 	level.append(levelChar);
 
-	Window::DrawLine(a_x, a_y, WHITE, "Sword", 50);
-	Window::DrawLine(a_x + 2, a_y, WHITE, name.cStr(), 50);
-	Window::DrawLine(a_x + 2, a_y + 1, WHITE, damage.cStr(), 50);
-	Window::DrawLine(a_x + 2, a_y + 2, WHITE, level.cStr(), 50);
+	Render::DrawLine(a_x, a_y, WHITE, "Sword", 50);
+	Render::DrawLine(a_x + 2, a_y, WHITE, name.cStr(), 50);
+	Render::DrawLine(a_x + 2, a_y + 1, WHITE, damage.cStr(), 50);
+	Render::DrawLine(a_x + 2, a_y + 2, WHITE, level.cStr(), 50);
 }

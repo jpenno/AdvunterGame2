@@ -1,4 +1,5 @@
 #include "Iteam.h"
+#include "Render.h"
 
 Iteam::Iteam(ePickUpType a_type) {
 	m_type = a_type;
@@ -18,5 +19,5 @@ void Iteam::Draw(int m_x, int m_y){
 	if (m_info.cStr() == "") {
 		int x = 10;
 	}
-	Window::DrawLine(m_x, m_y, m_textColor, m_info.cStr(), 50);
+	Render::DrawLine(m_x, m_y, m_textColor, m_info.cStr(), 50);
 }

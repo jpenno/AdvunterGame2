@@ -1,4 +1,5 @@
 #include "Button.h"
+#include "Render.h"
 
 Button::Button(){
 }
@@ -47,7 +48,8 @@ bool Button::UpDate()
 
 void Button::Draw(){
 	Rect screenBorder = { m_x, m_y, m_w, m_h };
-	Window::DrawBorder(screenBorder, m_color);
-	Window::DrawLine(m_x +2, m_y +2, WHITE, m_Text.cStr(), 50);
+	Render::DrawBorder(screenBorder, m_color);
+
+	Render::DrawLine(m_x +2, m_y +2, WHITE, m_Text.cStr(), 50);
 	m_color = YELLOW;
 }

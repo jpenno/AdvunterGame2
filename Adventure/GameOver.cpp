@@ -1,5 +1,6 @@
 #include "GameOver.h"
 #include "window.h"
+#include "Render.h"
 GameOver::GameOver() {
 	m_gameState = GAME_OVER;
 	m_clearScreen = true;
@@ -25,26 +26,28 @@ void GameOver::UpDate() {
 }
 
 void GameOver::Draw() {
+	Render::Clear();
 	if (m_clearScreen) {
 		m_clearScreen = false;
 		system("CLS");
 		Window::SetCursorVisibility(false);
 	}
 
-	Window::DrawLine(34,  3, WHITE, "Game Over", 50);
+	Render::DrawLine(34,  3, WHITE, "Game Over", 50);
 
 
-	gameOverText.setString("You mde it to level: ");
+	gameOverText.setString("You made it to level: ");
 	char levelChar[10];
 	//convert from int to char array to append 
 	_itoa_s(m_level, levelChar, 10);
 	gameOverText.append(levelChar);
 
-	Window::DrawLine(20, 10, WHITE, gameOverText.cStr(), 50);
+	Render::DrawLine(20, 10, WHITE, gameOverText.cStr(), 50);
 
 	for (int i = 0; i < MAX_BUTTONS; i++) {
 		m_buttons[i].Draw();
 	}
+	Render::Draw();
 }
 
 eGameStates GameOver::Run() {

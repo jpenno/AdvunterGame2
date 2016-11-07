@@ -1,12 +1,13 @@
 #include "Room.h"
 #include "Controlls.h"
+#include "Render.h"
 
 BaseRoom::BaseRoom(){}
 BaseRoom::~BaseRoom(){}
 
 void Room::DrawOptionText(char a_option[]) {
 	m_optinos.append(a_option);
-	Window::DrawLine(45, m_optionsY, WHITE, m_optinos.cStr(), 30);
+	Render::DrawLine(45, m_optionsY, WHITE, m_optinos.cStr(), 30);
 	m_optionsY += 2;
 	m_optinos.setString("Options: ");
 }
@@ -65,7 +66,7 @@ void Room::DrawRoonInfo(){
 			break;
 	}
 
-	Window::DrawLine(45, m_infoY, WHITE, roomType.cStr(), 50);
+	Render::DrawLine(45, m_infoY, WHITE, roomType.cStr(), 50);
 	m_infoY += 2;
 }
 

@@ -1,5 +1,6 @@
 #include "Menu.h"
 #include <string>
+#include "Render.h"
 Menu::Menu(){
 	m_gameState = MENU;
 
@@ -25,17 +26,20 @@ void Menu::UpDate() {
 }
 
 void Menu::Draw() {
+	Render::Clear();
 	int x = 28;
 	int y = 3;
 	Rect screenBorder = { x, y, 25, 8 };
-	Window::DrawBorder(screenBorder, YELLOW);
-	Window::DrawLine(x + 5, y +3, WHITE, "Advunter Game", 50);
+	Render::DrawBorder(screenBorder, YELLOW);
+	Render::DrawLine(x + 5, y +3, WHITE, "Advunter Game", 50);
 
 	for (int i = 0; i < MAX_BUTTONS; i++) {
 		m_buttons[i].Draw();
 	}
 
-	Window::DrawLine(2, 50, WHITE, "By: Jason Penno", 50);
+	Render::DrawLine(2, 50, WHITE, "By: Jason Penno", 50);
+
+	Render::Draw();
 }
 
 eGameStates Menu::Run() {

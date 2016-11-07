@@ -84,6 +84,62 @@ void Render::DrawBorder(Rect a_location, eColor a_color)
 	}
 }
 
+void Render::DrawChar(int a_x, int a_y, unsigned char a_char, eColor a_color)
+{
+	if (a_x < 0 || a_x > m_width || a_y < 0 || a_y > m_height) {
+		return;
+	}
+	m_buffer[a_y][a_x] = a_char;
+	m_bufferColor[a_y][a_x] = a_color;
+}
+
+void Render::DrawLine(int a_x, int a_y, eColor a_color, char *a_line, int a_max)
+{
+	if (a_line == nullptr || strcmp(a_line, "") == 0)
+	{
+		return;
+	}
+	// if the character is out of bounds then return
+	if (a_x < 0 || a_x > m_width || a_y < 0 || a_y > m_height)
+		return;
+
+	// must increment line after reaching the p_max character
+	//SetTextColor(a_color);
+	int charCount = 0, textCount = 0;
+	int x = a_x;
+	int y = a_y;
+	// lets print this out in line form
+	int lastBreak = 0;
+
+	while (true) {
+		// find the number of characters to print out
+		int doBreak = 1000;
+		int k;
+		for (k = charCount; a_line[k] != '\0'; ++k) {
+			if (k - lastBreak == a_max) break;
+			if (a_line[k] == ' ') doBreak = k;
+			if (a_line[k] == '\n') {
+				doBreak = k;
+				break;
+			}
+		}
+		if (a_line[k] == '\0') doBreak = k;
+		lastBreak = doBreak;
+		if (a_line[charCount] == ' ' || a_line[charCount] == '\n') charCount++;
+
+		if (a_line[charCount] == 'D') {
+			short cc = 10;
+		}
+		for (k = charCount; a_line[k] != '\0'; ++k) {
+			if (k >= doBreak) break;
+			DrawChar(++x, y, a_line[charCount++], a_color);
+		}
+		y++;
+		x = a_x;
+		if (a_line[charCount] == '\0') break;
+	}
+}
+
 void Render::Draw()
 {
 	for (int x = 0; x < m_width; x++)
@@ -91,8 +147,8 @@ void Render::Draw()
 		for (int y = 0; y < m_height; y++)
 		{		
 			Window::SetXY(x, y);
-			//Window::SetTextColor(m_bufferColor[y][x]);
-			Window::SetTextColor((eColor)(rand() % 15));
+			Window::SetTextColor(m_bufferColor[y][x]);
+			//Window::SetTextColor((eColor)(rand() % 15));
 			cout << m_buffer[y][x];
 		}
 	}

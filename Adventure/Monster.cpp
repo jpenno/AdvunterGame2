@@ -1,4 +1,5 @@
 #include "Monster.h"
+#include "Render.h"
 
 Monster::Monster() {
 	m_health = (rand()% 10)+1;
@@ -50,9 +51,9 @@ void Monster::DrawInfo(int a_x, int a_y) {
 	_itoa_s(m_level, levelChar, 10);
 	m_levelStr.append(levelChar);
 
-	Window::DrawLine(a_x, a_y, WHITE, m_levelStr.cStr(), 50);
+	Render::DrawLine(a_x, a_y, WHITE, m_levelStr.cStr(), 50);
 	a_y++;
-	Window::DrawLine(a_x, a_y, WHITE, m_healthStr.cStr(), 50);
+	Render::DrawLine(a_x, a_y, WHITE, m_healthStr.cStr(), 50);
 	a_y++;
-	Window::DrawLine(a_x, a_y, WHITE, m_damageStr.cStr(), 50);
+	Render::DrawLine(a_x, a_y, WHITE, m_damageStr.cStr(), 50);
 }

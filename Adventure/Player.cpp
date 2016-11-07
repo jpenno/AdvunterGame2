@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Render.h"
 
 Player::Player() {
 	m_postion = Postion(1, 1);
@@ -45,7 +46,7 @@ void Player::DrawInv() {
 		m_iTextY += 4;
 	}
 
-	Window::DrawLine(2, m_iTextY, WHITE, m_info.cStr(), 50);
+	Render::DrawLine(2, m_iTextY, WHITE, m_info.cStr(), 50);
 	m_iTextY += 2;
 	int iteamCount = 0;
 
@@ -62,7 +63,7 @@ void Player::DrawInv() {
 			_itoa_s(i+1, ichar, 10);
 			Invnumber.setString(ichar);
 			Invnumber.append(": ");
-			Window::DrawLine(2, m_iTextY, WHITE, Invnumber.cStr(), 50);
+			Render::DrawLine(2, m_iTextY, WHITE, Invnumber.cStr(), 50);
 			m_iteams[i]->Draw(6, m_iTextY);
 			m_iTextY += 2;
 			iteamCount++;
@@ -71,7 +72,7 @@ void Player::DrawInv() {
 	if (iteamCount >= m_maxIteams) {
 		m_fullInv = true;
 		m_fullInvStr.setString("your inventory if full");
-		Window::DrawLine(2, m_iTextY, RED, m_fullInvStr.cStr(), 50);
+		Render::DrawLine(2, m_iTextY, RED, m_fullInvStr.cStr(), 50);
 	}
 	else
 		m_fullInv = false;
@@ -137,14 +138,14 @@ void Player::Draw() {
 	_itoa_s(m_maxHealrh, maxHealthChar, 10);
 	m_healthStr.append(maxHealthChar);
 
-	Window::DrawLine(45, 3, m_hStrColro, m_healthStr.cStr(), 50);
+	Render::DrawLine(45, 3, m_hStrColro, m_healthStr.cStr(), 50);
 
 	String level("Level: ");
 	char levelChar[10];
 	//convert from int to char array to append 
 	_itoa_s(m_level, levelChar, 10);
 	level.append(levelChar);
-	Window::DrawLine(45, 2, WHITE, level.cStr(), 50);
+	Render::DrawLine(45, 2, WHITE, level.cStr(), 50);
 	//reset the player health text back to white
 	m_hStrColro = WHITE;
 }
